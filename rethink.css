@@ -73,3 +73,18 @@ img{
         margin: 2vh 2vw;
     }
 }
+
+
+blockquote{
+    border-left:5px solid #444;
+    padding-left: 10px;
+}
+
+
+p, pre, ol, ul, table, code{
+    color: #444;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #222;
+}
