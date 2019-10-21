@@ -28,6 +28,10 @@ h3{font-size: var(--font-size-4);}
 h4{font-size: var(--font-size-4);}
 h5{font-size: var(--font-size-4);}
 
+h1 > .subtitle{
+    font-size: var(--font-size-3);
+}
+
 h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
 		line-height: 1.375;
