@@ -1,0 +1,89 @@
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="rethink.css" />
+#+OPTIONS: toc:nil num:nil html-style:nil
+#+HTML_HEAD: <base target="_blank">
+
+#+Title: Imagine
+#+SUBTITLE: Org mode meets professional web design
+
+* Welcome to Imagine.
+
+Imagine is a css blog theme designed to work seamlessly with org mode. Imagine is clean and creative.
+
+To use Imagine simply include the following org headers:
+
+#+BEGIN_SRC org
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="blog.css" />
+#+OPTIONS: toc:nil num:nil html-style:nil
+#+END_SRC
+
+** Learn more
+
+To learn more about Imagine and what I(Jesse Kelly) do feel free to check out my [[https://www.jessekelly.tk][Blog]] or my [[https://www.github.com/jessekelly881][Github]]
+
+* Imagine supports...
+
+** Ordered lists
+
+1. A
+2. B
+3. C
+
+** Unordered lists
+- A
+- B
+- C
+
+** Links
+[[https://www.jessekelly.tk][jessekelly.tk]]
+
+
+** Images(Which are responsive!)
+[[https://www.snapoye.com/ArtShop/wp-content/uploads/2019/03/cari1.jpeg]]
+
+
+** Tables(Which are responsive!)
+
+|   |  N | N^2 | N^3 | N^4 | sqrt(n) | sqrt[4](N) |      Sum |  Doubled |
+|---+----+-----+-----+-----+---------+------------+----------+----------|
+| / | <> |   < |     |   > |       < |          > |          |          |
+| # |  1 |   1 |   1 |   1 |       1 |          1 |        6 |       12 |
+| # |  2 |   4 |   8 |  16 |  1.4142 |     1.1892 |  32.6034 |  65.2068 |
+| # |  3 |   9 |  27 |  81 |  1.7321 |     1.3161 | 123.0482 | 246.0964 |
+|---+----+-----+-----+-----+---------+------------+----------+----------|
+#+TBLFM: $8=vsum($2..$7)::$9=2*$8
+
+** Latex
+
+$$\int_{a}^{b} x^2 dx$$
+
+** Code
+
+#+BEGIN_SRC python :results output
+  def fact(n):
+      "Returns the factorial of a number"
+      if(n <= 1): return 1
+      else: return n*fact(n-1)
+
+  print(fact(3))
+#+END_SRC
+
+#+RESULTS:
+: 6
+** Quotes
+
+#+BEGIN_QUOTE
+Insanity: doing the same thing over and over again and expecting different results.
+
+Albert Einstein
+ #+END_QUOTE
+
+** Checkboxes
+
+- [X] Checked
+- [ ] Unchecked
+
+** TODO An item that needs done
+** DONE An item that is done
+** Tags                                                               :tag1:tag2:
+** Font styling
+*Bold* /italic/ _underlined_ =verbatim= ~code~ +strike-through+
