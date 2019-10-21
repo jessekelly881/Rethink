@@ -2,11 +2,10 @@
 
 :root {
     --font-size-1: 33.57px;
-    --font-size-2: 26.86px;
-    --font-size-3: 21.48px;
-    --font-size-4: 17.19px;
+    --font-size-2: 25.24px;
+    --font-size-3: 14.26px;
+    --font-size-4: 10.72px;
 
-    --font-size-small: 11px;
 }
 
 
@@ -20,6 +19,7 @@ html, body{
     margin: 0;
     font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-weight: 300;
+    font-size: var(--font-size-3);
 }
 
 p, ul, ol{
@@ -30,9 +30,8 @@ p, ul, ol{
 h1{font-size: var(--font-size-1);}
 h2{font-size: var(--font-size-2);}
 h3{font-size: var(--font-size-3);}
-h3{font-size: var(--font-size-4);}
-h4{font-size: var(--font-size-4);}
-h5{font-size: var(--font-size-4);}
+h4{font-size: var(--font-size-3);}
+h5{font-size: var(--font-size-3);}
 
 h1 > .subtitle{
     font-size: var(--font-size-3);
@@ -40,8 +39,7 @@ h1 > .subtitle{
 
 h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
-		line-height: 1.375;
-		letter-spacing: -0.05em;
+		letter-spacing: -0.02em;
 		margin: 0 0 1rem 0;
 }
 
@@ -52,15 +50,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .outline-3{
     border-bottom: 1px solid #CCC;
-    display: flex;
 }
 
-.outline-3 > h3{
-    flex: 40%;
+.outline-2 > h2{
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
-.outline-text-3{
-    flex: 60%;
+.outline-text-2{
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 img{
@@ -69,7 +68,7 @@ img{
 
 h2{
     padding-top: 10vh;
-    padding-bottom: 5vh;
+    padding-bottom: 2vh;
 }
 
 /* Code */
@@ -79,7 +78,13 @@ pre{
     border-radius: 2px;
 }
 
-/* Responsive content positioning */
+
+.outline-3{
+    display: grid;
+    grid-template-columns: 40fr 60fr;
+}
+
+ /* Responsive content positioning */
 @media only screen and (min-width: 750px) /* Large screens */
 {
     .outline-3{
@@ -95,11 +100,12 @@ pre{
 @media only screen and (max-width: 750px) /* Small screens */
 {
     .outline-3{
-        margin: 2vh 2vw;
+        margin: 2vh 5vw;
+        display: block;
     }
 
     .outline-text-2{
-        padding: 2vh 2vw;
+        padding: 2vh 5vw;
     }
 }
 
@@ -123,12 +129,12 @@ h1, h2, h3, h4, h5, h6{
     margin-top: 5px;
     display: block;
     color: white;
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-4);
 }
 
 .tag > span{
 		font-family: "Courier New", monospace;
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-4);
     background-color: purple;
     text-transform: uppercase;
     border-radius: 2px;
@@ -148,7 +154,7 @@ tr:nth-child(even) {
 
 pre{
 		font-family: "Courier New", monospace;
-    font-size: var(--font-size-small)
+    font-size: var(--font-size-4)
 }
 
 .org-org-meta-line{
@@ -173,4 +179,22 @@ a{
 
 .done{
     color: purple;
+}
+
+/* Responsive code blocks and tables */
+pre, .outline-text-2, .outline-text-3, outline-text-4{
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+/* Postamble */
+
+#postamble{
+    text-align: center;
+    width: 100%;
+}
+
+#postamble > p{
+    display: inline;
+    font-size: var(--font-size-4)
 }

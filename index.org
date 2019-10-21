@@ -2,14 +2,12 @@
 #+OPTIONS: toc:nil num:nil html-style:nil
 #+HTML_HEAD: <base target="_blank">
 
-#+Title: Imagine
+#+Title: Rethink
 #+SUBTITLE: Org mode meets professional web design
 
-* Welcome to Imagine.
+* Welcome to Rethink.
 
-Imagine is a css blog theme designed to work seamlessly with org mode. Imagine is clean and creative.
-
-To use Imagine simply include the following org headers:
+Rethink is a css theme targeted at org mode. Rethink was inspired by its cousin [[https://jessekelly881-imagine.surge.sh/][Imagine]] and HTML5's [[https://html5up.net/story][Story]]
 
 #+BEGIN_SRC org
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="blog.css" />
@@ -18,9 +16,9 @@ To use Imagine simply include the following org headers:
 
 ** Learn more
 
-To learn more about Imagine and what I(Jesse Kelly) do feel free to check out my [[https://www.jessekelly.tk][Blog]] or my [[https://www.github.com/jessekelly881][Github]]
+To learn more about Rethink and what I do feel free to check out my [[https://www.jessekelly.tk][Blog]] or my [[https://www.github.com/jessekelly881][Github]]
 
-* Imagine supports...
+* Rethink supports...
 
 ** Ordered lists
 
@@ -87,3 +85,6 @@ Albert Einstein
 ** Tags                                                               :tag1:tag2:
 ** Font styling
 *Bold* /italic/ _underlined_ =verbatim= ~code~ +strike-through+
+* Headers(Level 1)
+** Header(Level 2)
+*** Header(Level 3)
