@@ -12,7 +12,7 @@ Rethink is a css theme targeted at org mode. Rethink was inspired by its cousin 
 Rethink is available on Github [[https://github.com/jessekelly881/Theme-Rethink][here]]. To use rethink add the following headers to your org document:
 
 #+BEGIN_SRC org
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="blog.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="rethink.css" />
 #+OPTIONS: toc:nil num:nil html-style:nil
 #+END_SRC
 
