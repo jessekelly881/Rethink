@@ -86,7 +86,7 @@ Albert Einstein
 ** Font styling
 *Bold* /italic/ _underlined_ =verbatim= ~code~ +strike-through+
 
-* Example
+* Example Text
 
 ** Example 1
 

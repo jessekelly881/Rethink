@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
 
+/* Set variables */
 :root {
     --font-size-1: 2.25rem;
     --font-size-2: 1.75rem;
@@ -7,8 +8,24 @@
     --font-size-4: 1rem;
 
     --font-size-small: 0.8rem;
+    --font-size-xsmall: 0.6rem;
 
 }
+
+/* Set padding and margin */
+
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+h2{
+    padding-top: 0.5em;
+    padding-bottom: 5vh;
+}
+
+/* ------------------------- */
+
 
 
 ::selection {
@@ -17,17 +34,11 @@
 }
 
 html, body{
-    padding: 0;
-    margin: 0;
     font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-weight: 300;
     font-size: 14px;
 }
 
-p, ul, ol{
-		margin: 0 0 1rem 0;
-    padding: 0;
-}
 
 h1{font-size: var(--font-size-1);}
 h2{font-size: var(--font-size-2);}
@@ -41,8 +52,7 @@ h1 > .subtitle{
 
 h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
-		letter-spacing: -0.02em;
-		margin: 0 0 1rem 0;
+		letter-spacing: -0.03em;
 }
 
 
@@ -68,13 +78,10 @@ img{
     max-width: 100%;
 }
 
-h2{
-    padding-top: 10vh;
-    padding-bottom: 2vh;
-}
 
 /* Code */
 pre{
+    margin: 1em;
     background-color: #EEE;
     padding: 5px;
     border-radius: 2px;
@@ -132,12 +139,11 @@ h1, h2, h3, h4, h5, h6{
     margin-top: 5px;
     display: block;
     color: white;
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-xsmall);
 }
 
 .tag > span{
 		font-family: "Courier New", monospace;
-    font-size: var(--font-size-small);
     background-color: purple;
     text-transform: uppercase;
     border-radius: 2px;
