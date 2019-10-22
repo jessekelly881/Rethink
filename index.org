@@ -7,7 +7,7 @@
 
 * Welcome to Rethink.
 
-Rethink is a css theme targeted at org mode. Rethink was inspired by its cousin [[https://jessekelly881-imagine.surge.sh/][Imagine]] and HTML5's [[https://html5up.net/story][Story]]
+Rethink is a css theme targeted at org mode. Rethink was inspired by its cousin [[https://jessekelly881-imagine.surge.sh/][Imagine]] and HTML5 UP's theme [[https://html5up.net/story][Story]]
 
 #+BEGIN_SRC org
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="blog.css" />
