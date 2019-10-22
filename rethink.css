@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
 
 :root {
-    --font-size-1: 33.57px;
-    --font-size-2: 25.24px;
-    --font-size-3: 14.26px;
-    --font-size-4: 10.72px;
+    --font-size-1: 2.25rem;
+    --font-size-2: 1.75rem;
+    --font-size-3: 1.25rem;
+    --font-size-4: 1rem;
+
+    --font-size-small: 0.8rem;
 
 }
 
@@ -19,7 +21,7 @@ html, body{
     margin: 0;
     font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-weight: 300;
-    font-size: var(--font-size-3);
+    font-size: 14px;
 }
 
 p, ul, ol{
@@ -57,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
     grid-row-end: 2;
 }
 
-.outline-text-2{
+.outline-2{
     grid-row-start: 2;
     grid-row-end: 3;
 }
@@ -76,6 +78,7 @@ pre{
     background-color: #EEE;
     padding: 5px;
     border-radius: 2px;
+    font-size: var(--font-size-small) !important;
 }
 
 
@@ -129,12 +132,12 @@ h1, h2, h3, h4, h5, h6{
     margin-top: 5px;
     display: block;
     color: white;
-    font-size: var(--font-size-4);
+    font-size: var(--font-size-small);
 }
 
 .tag > span{
 		font-family: "Courier New", monospace;
-    font-size: var(--font-size-4);
+    font-size: var(--font-size-small);
     background-color: purple;
     text-transform: uppercase;
     border-radius: 2px;
