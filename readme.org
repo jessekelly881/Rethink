@@ -21,3 +21,6 @@ Getting the syntax highlighting working can sometimes be a little difficult. The
 (setq org-html-htmlize-output-type 'css)
 
 As far as I know there is no way to set this property locally in an org document. But if anyone knows a way I would love to know!
+
+* Current Todo List
+-
