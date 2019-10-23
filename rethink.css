@@ -183,10 +183,12 @@ a{
 
 .todo{
     color: #790604;
+		font-weight: 400;
 }
 
 .done{
     color: purple;
+		font-weight: 400;
 }
 
 /* Responsive code blocks and tables */
