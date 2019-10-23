@@ -67,18 +67,15 @@ $$\int_{a}^{b} x^2 dx$$
   print(fact(3))
 #+END_SRC
 
-#+RESULTS:
-: 6
 ** Quotes
 
 #+BEGIN_QUOTE
 Insanity: doing the same thing over and over again and expecting different results.
 
 Albert Einstein
- #+END_QUOTE
+#+END_QUOTE
 
 ** Checkboxes
-
 - [X] Checked
 - [ ] Unchecked
 
