@@ -16,11 +16,34 @@ To use Rethink copy the imagine.css file into the folder you want to use it and 
 #+END_SRC
 
 * Syntax highlighting
-Getting the syntax highlighting working can sometimes be a little difficult. The stylesheet targets html classes produced by org to style them. But, for this to work, we have to tell org that we want it to export to html with these classes. To do so the following is required:
+Getting the syntax highlighting working can sometimes be a little difficult. The stylesheet targets html classes produced by org to style them. But, for this to work, we have to tell org that we want it to export to html with these classes. This can be done one of two ways. Globably, by adding the following to your org config
 
+#+BEGIN_SRC emacs-lisp
 (setq org-html-htmlize-output-type 'css)
+#+END_SRC
 
-As far as I know there is no way to set this property locally in an org document. But if anyone knows a way I would love to know!
+or to set this locally add the following to the end of your org document(than you larstvei for recomending this):
+
+#+BEGIN_SRC org
+* COMMENT Local Variables
+  # Local Variables:
+  # org-html-htmlize-output-type: css
+  # End:
+#+END_SRC
+
+Because this code is wrapped in a COMMENT header it will not be exported. This method is in fact very flexable because you can add arbitrary elisp to the document which will run whenever the document is opened(prompting you of course, but you can tell emacs to never ask again). An excelent example of this is the following code:
+
+#+BEGIN_SRC org
+* COMMENT Local Variables
+  # Local Variables:
+  # org-html-htmlize-output-type: css
+  # eval: (add-hook 'after-save-hook 'org-html-export-to-html nil t)
+  # End:
+#+END_SRC
+
+Adding this to the end of the document will not only tell emacs to export the org document with the classes we need for code highlighting it will also tell emacs to export the document to html on every save. Which is SUPER useful.
+
+* Recently changed/added
+- Increaced weight for todo and done items
 
 * Current Todo List
--

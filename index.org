@@ -1,6 +1,5 @@
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="rethink.css" />
-#+OPTIONS: toc:nil num:nil html-style:nil
-#+HTML_HEAD: <base target="_blank">
+#+OPTIONS: num:nil html-style:nil
 
 #+Title: Rethink
 #+SUBTITLE: Org mode meets professional web design
