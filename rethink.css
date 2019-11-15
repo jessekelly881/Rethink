@@ -220,3 +220,8 @@ a{
     display: inline;
     font-size: var(--font-size-4)
 }
+
+.outline-text-2, .outline-text-3, .outline-text-4{
+	max-width: 100%;
+	overflow-x: auto;
+}
