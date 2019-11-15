@@ -179,6 +179,8 @@ tr:nth-child(even) {
 pre{
 		font-family: "Courier New", monospace;
     font-size: var(--font-size-4)
+    max-width: 100%;
+    overflow-x: auto;
 }
 
 .org-org-meta-line{
