@@ -1,8 +1,8 @@
 * What is Rethink?
 
-Imagine is a single page theme designed for org mode exports. It currently supports latex, code blocks, lists, and tables.
+Rethink is a single page theme designed for org mode exports. It currently supports latex, code blocks, lists, and tables.
 
-To see imagine live see:
+To see rethink live see:
 [[https://jessekelly881-rethink.surge.sh/][Rethink]]
 
 * Support my work!
@@ -11,7 +11,7 @@ Coffee in. Code out. Wanna buy me a coffee(or a beer)? Bitcoin: bc1q60twsepwkjpf
 
 * How to use
 
-To use Rethink copy the imagine.css file into the folder you want to use it and them add the following headers to your org mode document:
+To use Rethink copy the rethink.css file into the folder you want to use it and them add the following headers to your org mode document:
 
 #+BEGIN_SRC org
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="rethink.css" />
@@ -19,13 +19,13 @@ To use Rethink copy the imagine.css file into the folder you want to use it and 
 #+END_SRC
 
 * Syntax highlighting
-Getting the syntax highlighting working can sometimes be a little difficult. The stylesheet targets html classes produced by org to style them. But, for this to work, we have to tell org that we want it to export to html with these classes. This can be done one of two ways. Globably, by adding the following to your org config
+Getting the syntax highlighting working can sometimes be a little difficult. The stylesheet targets html classes produced by org to style them. But, for this to work, we have to tell org that we want it to export to html with these classes. This can be done one of two ways. Globally, by adding the following to your org config
 
 #+BEGIN_SRC emacs-lisp
 (setq org-html-htmlize-output-type 'css)
 #+END_SRC
 
-or to set this locally add the following to the end of your org document(than you larstvei for recomending this):
+or to set this locally add the following to the end of your org document(than you larstvei for recommending this):
 
 #+BEGIN_SRC org
 * COMMENT Local Variables
@@ -34,7 +34,7 @@ or to set this locally add the following to the end of your org document(than yo
   # End:
 #+END_SRC
 
-Because this code is wrapped in a COMMENT header it will not be exported. This method is in fact very flexable because you can add arbitrary elisp to the document which will run whenever the document is opened(prompting you of course, but you can tell emacs to never ask again). An excelent example of this is the following code:
+Because this code is wrapped in a COMMENT header it will not be exported. This method is in fact very flexible because you can add arbitrary elisp to the document which will run whenever the document is opened(prompting you of course, but you can tell emacs to never ask again). An excellent example of this is the following code:
 
 #+BEGIN_SRC org
 * COMMENT Local Variables
@@ -47,6 +47,6 @@ Because this code is wrapped in a COMMENT header it will not be exported. This m
 Adding this to the end of the document will not only tell emacs to export the org document with the classes we need for code highlighting it will also tell emacs to export the document to html on every save. Which is SUPER useful.
 
 * Recently changed/added
-- Increaced weight for todo and done items
+- Increased weight for todo and done items
 
 * Current Todo List
