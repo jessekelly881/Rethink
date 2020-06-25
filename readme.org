@@ -5,6 +5,9 @@ Imagine is a single page theme designed for org mode exports. It currently suppo
 To see imagine live see:
 [[https://jessekelly881-rethink.surge.sh/][Rethink]]
 
+* Support my work!
+
+Coffee in. Code out. Wanna buy me a coffee(or a beer)? Bitcoin: bc1q60twsepwkjpf8w7myaupkr2fxkuc0cze0wxygh
 
 * How to use
 
