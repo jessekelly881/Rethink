@@ -5,10 +5,6 @@ Rethink is a single page theme designed for org mode exports. It currently suppo
 To see rethink live see:
 [[https://jessekelly881-rethink.surge.sh/][Rethink]]
 
-* Support my work!
-
-Coffee in. Code out. Wanna buy me a coffee(or a beer)? Bitcoin: bc1q60twsepwkjpf8w7myaupkr2fxkuc0cze0wxygh
-
 * How to use
 
 To use Rethink copy the rethink.css file into the folder you want to use it and them add the following headers to your org mode document:
